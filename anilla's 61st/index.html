@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background: #fde9ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        font-family: "Pacifico", cursive;
+        text-align: center;
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #d13ea0;
+        margin-top: 20px;
+        text-shadow: 2px 2px 4px #fff;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    /* Plant Decorations */
+    .decor {
+        position: fixed;
+        top: 55%;
+        transform: translateY(-50%);
+        width: 18vw;
+        max-width: 200px;
+        z-index: 1;
+        pointer-events: none; /* Allows clicking through the plants */
+    }
+    .left-plant { left: 0; }
+    .right-plant { right: 0; transform: translateY(-50%) scaleX(-1); }
+
+    /* Slideshow Box */
+    .slideshow-container {
+        margin-top: 20px;
+        width: 85vw;
+        max-width: 800px;
+        aspect-ratio: 16 / 9; /* Maintains a nice rectangle shape on all devices */
+        position: relative;
+        border-radius: 25px;
+        border: 8px solid #d13ea0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        background: #000;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    /* Images */
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out; /* Smooth crossfade */
+        background-position: center;
+        /* Use 'cover' to fill the box, or 'contain' to see the whole image with black bars */
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+
+    .slide.active {
+        opacity: 1;
+    }
+
+    /* Text Messages */
+    .message-container {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .message {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        font-size: 1.5rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px #000, 0 0 10px #d13ea0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .message.active {
+        opacity: 1;
+    }
+
+    /* Button */
+    button {
+        margin-top: 30px;
+        padding: 12px 30px;
+        border: none;
+        background: #d13ea0;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 20;
+        box-shadow: 0 4px 15px rgba(209, 62, 160, 0.4);
+        transition: transform 0.2s;
+        margin-bottom: 50px;
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+
+    @media(max-width: 750px) {
+        h1 { font-size: 2rem; }
+        .message { font-size: 1.2rem; }
+        .slideshow-container { width: 95vw; }
+    }
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday Mom 🎉💖</h1>
+
+<img src="orchid 1.jpg" class="decor left-plant" alt="orchid">
+<img src="orchid 2.jpg" class="decor right-plant" alt="orchid">
+
+<div class="slideshow-container">
+    <div class="slide active" style="background-image: url('1.png');"></div>
+    <div class="slide" style="background-image: url('2.png');"></div>
+    <div class="slide" style="background-image: url('3.png');"></div>
+    <div class="slide" style="background-image: url('4.png');"></div>
+    <div class="slide" style="background-image: url('5.png');"></div>
+    <div class="slide" style="background-image: url('6.png');"></div>
+    <div class="slide" style="background-image: url('7.png');"></div>
+    <div class="slide" style="background-image: url('8.png');"></div>
+    <div class="slide" style="background-image: url('9.png');"></div>
+    <div class="slide" style="background-image: url('10.png');"></div>
+    <div class="slide" style="background-image: url('11.png');"></div>
+    <div class="slide" style="background-image: url('12.png');"></div>
+    <div class="slide" style="background-image: url('13.png');"></div>
+    <div class="slide" style="background-image: url('14.png');"></div>
+    <div class="slide" style="background-image: url('15.png');"></div>
+    <div class="slide" style="background-image: url('16.png');"></div>
+    <div class="slide" style="background-image: url('17.png');"></div>
+    <div class="slide" style="background-image: url('18.png');"></div>
+    <div class="slide" style="background-image: url('19.png');"></div>
+    <div class="slide" style="background-image: url('20.png');"></div>
+    <div class="slide" style="background-image: url('21.png');"></div>
+    <div class="slide" style="background-image: url('22.png');"></div>
+    <div class="slide" style="background-image: url('23.png');"></div>
+    <div class="slide" style="background-image: url('24.png');"></div>
+    <div class="slide" style="background-image: url('25.png');"></div>
+    <div class="slide" style="background-image: url('26.png');"></div>
+    <div class="slide" style="background-image: url('27.png');"></div>
+    <div class="slide" style="background-image: url('28.png');"></div>
+    <div class="slide" style="background-image: url('29.png');"></div>
+    <div class="slide" style="background-image: url('30.png');"></div>
+    <div class="slide" style="background-image: url('31.png');"></div>
+    <div class="slide" style="background-image: url('32.png');"></div>
+
+    <div class="message-container">
+        <div class="message active">Thank you for all your love 💗</div>
+        <div class="message">You are the heart of our home 💝</div>
+        <div class="message">We love you more than words ✨</div>
+        <div class="message">You are truly one of a kind 🌟</div>
+        <div class="message">Your smile brightens every room 💐</div>
+        <div class="message">Wishing you the happiest birthday! 🎂</div>
+    </div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">Play Music 🎶</button>
+
+<script>
+    // --- Configuration ---
+    const imageInterval = 3500; // Change image every 3.5 seconds
+    const messageInterval = 5000; // Change message every 5 seconds
+
+    // --- Select Elements ---
+    const slides = document.querySelectorAll('.slide');
+    const messages = document.querySelectorAll('.message');
+    const audio = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("musicBtn");
+
+    let currentSlide = 0;
+    let currentMessage = 0;
+
+    // --- Image Slider Logic ---
+    function nextSlide() {
+        // Remove active class from current
+        slides[currentSlide].classList.remove('active');
+        
+        // Calculate next index (loops back to 0 at the end)
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        // Add active class to next
+        slides[currentSlide].classList.add('active');
+    }
+
+    // --- Message Slider Logic ---
+    function nextMessage() {
+        messages[currentMessage].classList.remove('active');
+        currentMessage = (currentMessage + 1) % messages.length;
+        messages[currentMessage].classList.add('active');
+    }
+
+    // Start the intervals
+    setInterval(nextSlide, imageInterval);
+    setInterval(nextMessage, messageInterval);
+
+    // --- Audio Logic ---
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                musicBtn.innerText = "Pause Music ⏸";
+            }).catch(error => {
+                console.log("Audio play failed:", error);
+                alert("Please interact with the page first!");
+            });
+        } else {
+            audio.pause();
+            musicBtn.innerText = "Play Music 🎶";
+        }
+    }
+</script>
+
+</body>
+</html>
